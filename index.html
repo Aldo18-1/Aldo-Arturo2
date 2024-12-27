@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog personal de Aldo Arturo sobre tecnología, música y crecimiento personal.">
+    <meta name="keywords" content="blog, tecnología, música, Al2thebry, desarrollo, creatividad">
+    <meta name="author" content="Aldo Arturo">
+    <title>Al2thebry - Blog Personal</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #1e1e2f, #2c2c3c);
+            color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
+            color: #e94e77;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        a {
+            text-decoration: none;
+            color: #e94e77;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #4d9de0;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(30, 30, 47, 0.9);
+            z-index: 1000;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header nav ul {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .post {
+            margin-bottom: 20px;
+            border-left: 5px solid #e94e77;
+            padding-left: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #1e1e2f;
+            color: #f4f4f4;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        button {
+            background-color: #e94e77;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #4d9de0;
+        }
+
+        input, textarea {
+            width: calc(100% - 40px);
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            outline: none;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #aaa;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 20px;
+            }
+
+            header nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            body {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <!-- Agregado botón de Facebook -->
+            <li><a href="https://www.facebook.com/tu-pagina" target="_blank"><button>Facebook</button></a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="inicio">
+    <h1>Bienvenidos a Al2thebry</h1>
+    <p>Explora mi mundo de tecnología, creatividad y crecimiento personal.</p>
+</section>
+
+<section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy Aldo Arturo, un apasionado por la tecnología, la música y las relaciones que nos definen como seres humanos. Este blog es mi espacio para compartir mis pensamientos y experiencias con el mundo.</p>
+</section>
+
+<section id="blog">
+    <h2>Mi Blog</h2>
+    <div class="post">
+        <h3>Mi primer post en el blog</h3>
+        <p>Este es un espacio donde hablaré sobre mis ideas, proyectos y reflexiones. ¡Espero que disfrutes de este recorrido!</p>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <form id="form-contacto">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu email" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Al2thebry. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    // Scroll suave
+    document.querySelectorAll('a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Formulario de contacto
+    document.getElementById('form-contacto').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('¡Gracias por tu mensaje! Te responderé pronto.');
+    });
+</script>
+
+</body>
+</html>
