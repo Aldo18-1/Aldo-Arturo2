@@ -170,8 +170,8 @@
             <li><a href="#sobre-mi">Sobre mí</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contacto">Contacto</a></li>
-            <!-- Agregado botón de Facebook -->
-            <li><a href="https://www.facebook.com/tu-pagina" target="_blank"><button>Facebook</button></a></li>
+            <!-- Botón de Facebook actualizado -->
+            <li><a href="https://www.facebook.com/Al2elbry" target="_blank"><button>Facebook</button></a></li>
         </ul>
     </nav>
 </header>
@@ -227,4 +227,135 @@
 </script>
 
 </body>
-</html>
+        </html>       button {
+            background-color: #e94e77;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #4d9de0;
+        }
+
+        input, textarea {
+            width: calc(100% - 40px);
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            outline: none;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #aaa;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 20px;
+            }
+
+            header nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            body {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <!-- Botón de Facebook actualizado -->
+            <li><a href="https://www.facebook.com/Al2elbry" target="_blank"><button>Facebook</button></a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="inicio">
+    <h1>Bienvenidos a Al2thebry</h1>
+    <p>Explora mi mundo de tecnología, creatividad y crecimiento personal.</p>
+</section>
+
+<section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy Aldo Arturo, un apasionado por la tecnología, la música y las relaciones que nos definen como seres humanos. Este blog es mi espacio para compartir mis pensamientos y experiencias con el mundo.</p>
+</section>
+
+<section id="blog">
+    <h2>Mi Blog</h2>
+    <div class="post">
+        <h3>Mi primer post en el blog</h3>
+        <p>Este es un espacio donde hablaré sobre mis ideas, proyectos y reflexiones. ¡Espero que disfrutes de este recorrido!</p>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <form id="form-contacto">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu email" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Al2thebry. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    // Scroll suave
+    document.querySelectorAll('a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Formulario de contacto
+    document.getElementById('form-contacto').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('¡Gracias por tu mensaje! Te responderé pronto.');
+    });
+</script>
+
+</body>
+</html>id Studio</html>
